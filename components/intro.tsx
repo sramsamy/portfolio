@@ -10,8 +10,8 @@ import { FiGithub, FiLinkedin,FiInstagram } from "react-icons/fi";
 
 export default function Intro() {
     return (
-        <section className="h-screen mb-28 mt-4 pt-24 text-left sm:mb:0 sm:mt-4 flex flex-col justify-center sm:flex-row">
-            <motion.div className="absolute left-0 w-16 hidden xl:flex pl-4 p sm:mb-0 sm:mt-0"
+        <section className="h-screen mb-28 mt-4 text-left sm:mb:0 sm:mt-4 flex flex-col justify-center sm:flex-row">
+            <motion.div className="ml-4 absolute left-0 w-16 hidden xl:flex pl-4 p sm:mb-0 sm:mt-0"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}>
@@ -37,9 +37,9 @@ export default function Intro() {
                     animate={{ opacity: 1, y: 0 }}
                     >
                         <p className="text-blue-700 mb-4">Hi, my name is</p>
-                        <p className="text-slate-200 font-bold text-6xl mb-4"> Sachin Ramsamy.</p>
-                        <p className="text-slate-300 font-bold text-5xl mb-4"> Aspiring full-stack developer.</p>
-                        <p className="italic text-slate-300 mb-4 text-xl">I'm a student at <span className="text-blue-700">Griffith University</span> who's passion is to bridge<br /> the gap
+                        <p className="text-slate-200 font-bold text-7xl mb-4"> Sachin Ramsamy.</p>
+                        <p className="text-slate-300 font-bold text-7xl mb-4"> Aspiring full-stack developer.</p>
+                        <p className=" text-slate-300 mb-4 text-xl">I'm a student at <span className="text-blue-700">Griffith University</span> who's passion is to bridge<br /> the gap
                         between humans and technology by designing<br /> and developing  user friendly and intuitive apps.
                         </p>
 
@@ -55,11 +55,11 @@ export default function Intro() {
                     </motion.h1>
 
             </div>
-            <motion.div className="my-[150px] mr-0 fixed flex-col right-0 xl:flex hidden pl-4 p"
+            <motion.div className="my-[155px] fixed flex-col right-0 xl:flex hidden pl-4 p"
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1 }}>
-                <div className="pb-32 fixed flex right-0 lg:flex rotate-90 ">
+                <div className="pb-24 fixed flex right-0 lg:flex rotate-90 ">
                     <a href="mailto:sachin_drz125@hotmail.com" className="text-l text-slate-400 p-2 outline-none focus:scale-110 hover:scale-110 hover:text-blue-700 hover:-translate-y-1 active:scale-105 transition">
                         sachin_drz125@hotmail.com
                     </a>
