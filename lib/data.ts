@@ -2,10 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import agriStorageImage from "@/public/robot.jpeg";
-import portfolioImage from "@/public/nasa.jpeg";
-import workIntegratedLearningImage from "@/public/coding.jpeg";
-import formulaOneImage from "@/public/coding.jpeg";
+import agriStorageImage from "@/public/agri.png";
+import portfolioImage from "@/public/portfolio.png";
+import workIntegratedLearningImage from "@/public/wil.png";
+import formulaOneImage from "@/public/f1.png";
+import gymAppImage from "@/public/gym2.png";
 
 export const links = [
     {
@@ -87,14 +88,14 @@ export const projectsData = [
     {
         title: "Truck Booking System",
         description:
-            "I am working as a full-stack developer on this project for the last 4 months.",
+            "A booking management system for Agri Storage and Logistics, a prominent player in the agricultural industry spanning across QLD and NSW. I am working as a full-stack developer on this project for the last 4 months.",
         tags: ["PHP", "Laravel", "SQLite3", "Tailwind"],
         imageUrl: agriStorageImage,
     },
     {
         title: "Portfolio Website",
         description:
-            "My personal website built with React, Typescipt and Next.js",
+        "My personal website built with React, Typescipt and Next.js",
         tags: ["React", "TypeScript", "Next.js", "Tailwind"],
         imageUrl: portfolioImage,
     },
@@ -117,7 +118,7 @@ export const projectsData = [
         description:
             "An app that provides an evidence-based workout routine that accommodates for individuals with busy lifestyles.",
         tags: ["Ionic", "Angular", "Typescript"],
-        imageUrl: workIntegratedLearningImage,
+        imageUrl: gymAppImage,
     },
 ] as const;
 

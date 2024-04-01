@@ -9,7 +9,7 @@ export default function About() {
     return (
 
         <motion.section
-        className="mb-28 max-w-[45rem] leading-8 text-center sm:mb-40 scroll-mt-23"
+        className="mb-28 max-w-[45rem] leading-8 text-center sm:mb-40 scroll-mt-23 scroll-mt-28"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
@@ -36,11 +36,11 @@ export default function About() {
 
                 <p>
                 <span className="italic">When I'm not coding</span>, I enjoy playing
-                video games, watching movies, and playing with my dog. I also enjoy{" "}
+                golf, watching F1, and playing with my dog. I also enjoy{" "}
                 <span className="font-medium">learning new things</span>. I am currently
-                learning about{" "}
-                <span className="font-medium">history and philosophy</span>. I'm also
-                learning how to play the guitar.
+                learning how{" "}
+                <span className="font-medium">to play the guitar</span>. I also
+                love to cook.
                 </p>
     </motion.section>
     );

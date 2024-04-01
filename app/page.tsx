@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
+import Projects from "@/components/projects";
 // import '../public/css/styles.css';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="flex flex-col px-4 items-center mt-12">
       <Intro />
       <About />
+      <Projects />
     </main>
   )
 }
