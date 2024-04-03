@@ -2,7 +2,7 @@ import About from "@/components/about";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import Projects from "@/components/projects";
-// import '../public/css/styles.css';
+import '../public/css/styles.css';
 
 export default function Home() {
   return (

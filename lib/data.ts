@@ -140,3 +140,14 @@ export const skillsData = [
     "Ionic",
     "Framer Motion",
 ] as const;
+
+export const recentTechs = [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "Laravel",
+    "PHP",
+    "Framer Motion",
+] as const;
