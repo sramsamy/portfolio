@@ -1,16 +1,17 @@
 "use client";
-import Image from "next/image";
-import introImage from "@/public/meAndBella.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowRight} from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FiGithub, FiLinkedin,FiInstagram } from "react-icons/fi";
+import { useSectionInView } from "@/lib/hooks";
 
 
 export default function Intro() {
+    const {ref} = useSectionInView('Home');
+
     return (
-        <section id="home" className="h-screen text-left sm:mb:0 sm:mt-4 flex flex-col justify-center sm:flex-row scroll-mt-[100rem]">
+        <section ref={ref} id="home" className="h-screen text-left sm:mb:0 sm:mt-4 flex flex-col justify-center sm:flex-row scroll-mt-[100rem]">
             <motion.div className="ml-4 absolute left-0 w-16 hidden xl:flex pl-4 p sm:mb-0 sm:mt-0"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}

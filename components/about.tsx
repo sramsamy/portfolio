@@ -6,12 +6,17 @@ import Image from "next/image";
 import introImage from "@/public/meAndBella.jpeg";
 import { GiTriangleTarget } from "react-icons/gi";
 import { recentTechs } from '@/lib/data';
+import { useSectionInView } from '@/lib/hooks';
 
 
 
 export default function About() {
-    return (
+
+    const {ref} = useSectionInView('About');
+
+    return (    
         <motion.section
+            ref={ref}
             className="pl-28 h-screen sm:mb-0 max-w-[80rem] leading-8 text-center scroll-mt-23 scroll-mt-28"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}

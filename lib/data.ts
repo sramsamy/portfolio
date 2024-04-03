@@ -10,6 +10,10 @@ import gymAppImage from "@/public/gym2.png";
 
 export const links = [
     {
+        name: "Home",
+        hash: "#home",
+    },
+    {
         name: "About",
         hash: "#about",
     },

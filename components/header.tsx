@@ -1,16 +1,17 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { links } from "@/lib/data";
 import Link from 'next/link';
 import Image from "next/image";
 import logo from "@/public/SR.png";
 import clsx from 'clsx';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Header() {
 
-    const [activeSection, setActiveSection] = useState('Home');
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
         <header className="z-[999] relative px-4">
@@ -22,7 +23,8 @@ export default function Header() {
                 alt='Logo' 
                 />
             </div>
-            <motion.div className="fixed top-0 right-0 w-full bg-slate-950 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+            <motion.div 
+            className="fixed top-0 right-0 w-full bg-slate-950 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             >
@@ -41,7 +43,11 @@ export default function Header() {
                                     "text-blue-700": activeSection === link.name, 
                                     })}
                                     href={link.hash}
-                                    onClick={() => setActiveSection(link.name)}
+                                    onClick={() => {
+                                        setActiveSection(link.name);
+                                        setTimeOfLastClick(Date.now());
+                                    }
+                                }
                                 >
                                     {link.name}
                                     {
