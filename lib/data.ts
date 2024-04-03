@@ -9,30 +9,31 @@ import formulaOneImage from "@/public/f1.png";
 import gymAppImage from "@/public/gym2.png";
 
 export const links = [
-    {
-        name: "Home",
-        hash: "#home",
-    },
-    {
-        name: "About",
-        hash: "#about",
-    },
-    {
-        name: "Projects",
-        hash: "#projects",
-    },
-    {
-        name: "Skills",
-        hash: "#skills",
-    },
-    {
-        name: "Education",
-        hash: "#education",
-    },
-    {
-        name: "Experience",
-        hash: "#experience",
-    },
+	{
+		name: "About",
+		hash: "#about",
+		num: 1,
+	},
+	{
+		name: "Projects",
+		hash: "#projects",
+		num: 2,
+	},
+	{
+		name: "Skills",
+		hash: "#skills",
+		num: 3,
+	},
+	{
+		name: "Experience",
+		hash: "#experience",
+		num: 4,
+	},
+	{
+		name: "Contact",
+		hash: "#contact",
+		num: 4,
+	},
 ] as const;
 
 export const eeducationData = [
@@ -63,29 +64,51 @@ export const eeducationData = [
     },
 ] as const;
 export const experiencesData = [
-    {
-        title: "Software Developer @ Agri-Storage & Logistics",
-        location: "Gold Coast, QLD",
-        description:
-            "I Designed and devloped a fully functional booking management system for a key player in the agri-cultural sector",
-        icon: React.createElement(LuGraduationCap),
-        date: "Nov 2024 - Present",
-    },
-    {
-        title: "Software Developer Intern @",
-        location: "Gold Coast, QLD",
-        description: "Work Integrated Leearning (WIL)",
-        icon: React.createElement(CgWorkAlt),
-        date: "Jun 2024 - Oct 2024",
-    },
-    {
-        title: "Pharmacy Assistant @ TeryyWhite Chemmart",
-        location: "Gold Coast, QLD",
-        description:
-            "Ensured accurate processing of prescriptions and maintained a high level of precision.",
-        icon: React.createElement(FaReact),
-        date: "Aug 2023 - Marc 2024",
-    },
+	{
+		title: "Software Developer @ Agri-Storage & Logistics",
+		location: "Gold Coast, QLD",
+		description:
+			"I Designed and devloped a fully functional booking management system for a key player in the agri-cultural sector",
+		icon: React.createElement(CgWorkAlt),
+		date: "Nov 2024 - Present",
+	},
+
+	{
+		title: "Software Developer Intern @",
+		location: "Gold Coast, QLD",
+		description: "Work Integrated Learning (WIL)",
+		icon: React.createElement(CgWorkAlt),
+		date: "Jun 2024 - Oct 2024",
+	},
+	{
+		title: "Bachlor of Information Technology",
+		location: "Griffith Universtiy, Gold Coast, QLD",
+		description: "Software Development | GPA: 6.88",
+		icon: React.createElement(LuGraduationCap),
+		date: "Mar 2022 - Oct 2024",
+	},
+	{
+		title: "Pharmacy Assistant @ TeryyWhite Chemmart",
+		location: "Gold Coast, QLD",
+		description:
+			"Ensured accurate processing of prescriptions and maintained a high level of precision.",
+		icon: React.createElement(CgWorkAlt),
+		date: "Aug 2023 - Marc 2024",
+	},
+	{
+		title: "Bachelor of Biomedical Science",
+		location: "University of New England, NSW",
+		description: "",
+		icon: React.createElement(LuGraduationCap),
+		date: "Feb 2013 - Nov 2016",
+	},
+	{
+		title: "Higher School Education",
+		location: "Moree Secondary College, NSW",
+		description: "",
+		icon: React.createElement(LuGraduationCap),
+		date: "Feb 2007 - Nov 2012",
+	},
 ] as const;
 
 export const projectsData = [
