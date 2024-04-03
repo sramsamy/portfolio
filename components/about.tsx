@@ -28,30 +28,30 @@ export default function About() {
 				<div className="md:w-[50%] text-left text-xl">
 					<p className="mb-3">
 						After studying a degree in{" "}
-						<span className="font-medium">Biomedical Science</span>, I decided
-						to pursue my passion for programming. I enrolled in and a Bachelor
-						of IT and fell in love{" "}
+						<span className="font-medium">Biomedical Science</span>, I later
+						discovered that my true passion lay in software development. So, I
+						enrolled in a Bachelor of IT and fell in love with{" "}
+						<span className="font-medium text-blue-600">building software</span>
+						. <span className="">My favorite part of programming</span> is the
+						joy I feel when seeing others interact with somerhing I've built. I
+						also <span className=" text-blue-600">love</span> the feeling of
+						finally figuring out a solution to a problem.
+						<br />
+						<br /> My core stack is{" "}
 						<span className="font-medium text-blue-600">
-							with web development
+							Larvel, PHP & SQlite{" "}
 						</span>
-						. <span className="italic">My favorite part of programming</span> is
-						the problem-solving aspect. <br />
-						<br /> I <span className="underline text-blue-600">love</span> the
-						feeling of finally figuring out a solution to a problem. My core
-						stack is{" "}
-						<span className="font-medium text-blue-600">
-							React, Next.js, Node.js, and MongoDB
-						</span>
-						. I am also familiar with Laravel and PHP. I am always looking to
-						learn new technologies. I am currently looking for a{" "}
+						and I am also familiar with React, Next.js, Node.js, and MongoDB.
+						I'm always looking to learn new technologies and I am currently
+						looking for a{" "}
 						<span className="font-medium">full-time position</span> as a
 						software developer.
 					</p>
 					<p className="">
-						<span className="italic">When I'm not coding</span>, I enjoy
-						cooking, playing golf, watching F1, and playing with my dog. I also
-						enjoy <span className="font-medium">learning new things</span> and I
-						am currently learning how{" "}
+						<span className="">When I'm not coding</span>, I enjoy cooking,
+						playing golf, watching F1, and playing with my dog. I also enjoy{" "}
+						<span className="font-medium">learning new things</span> and I am
+						currently learning how{" "}
 						<span className="font-medium">to play the guitar</span>.
 					</p>
 					<br />
