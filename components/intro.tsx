@@ -7,10 +7,7 @@ import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-	const {
-		setActiveSection,
-		setTimeOfLastClick
-	} = useActiveSectionContext();
+	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 	return (
 		<section
 			id="home"
@@ -79,7 +76,7 @@ export default function Intro() {
 					>
 						<Link
 							href="#contact"
-							className="group mt-8 flex items-center border border-[#e0fd27] rounded-md text-[#e0fd27] px-4 py-3 gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-black active:scale-105 transition"
+							className="group mt-8 flex items-center border border-slate-400 rounded-md text-slate-400 px-4 py-3 gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-black hover:text-slate-300 hover:border-slate-300 active:scale-105 transition"
 							onClick={() => {
 								setActiveSection("Contact");
 								setTimeOfLastClick(Date.now());

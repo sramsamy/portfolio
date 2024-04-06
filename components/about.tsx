@@ -21,7 +21,7 @@ export default function About() {
 			id="about"
 		>
 			<div className="flex items-center gap-4 text-center">
-				<h1 className="text-[#e0fd27] text-3xl mb-8">01.</h1>
+				<h1 className="text-blue-600 text-3xl mb-8">01.</h1>
 				<SectionHeading>About me</SectionHeading>
 			</div>
 			<div className="flex flex-col md:flex-row justify-center md:justify-start gap-8 md:mt-14">
@@ -60,7 +60,7 @@ export default function About() {
 						<ul className="grid grid-cols-2 md:grid-cols-2 gap-2">
 							{recentTechs.map((recentTech, index) => (
 								<li key={index} className="flex items-center text-sm">
-									<GiTriangleTarget className="text-[#e0fd27] rotate-90 mr-2 text-xs" />
+									<GiTriangleTarget className="text-blue-600 rotate-90 mr-2 text-xs" />
 									<span>{recentTech}</span>
 								</li>
 							))}

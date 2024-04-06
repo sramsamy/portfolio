@@ -30,7 +30,7 @@ export default function Contact() {
 			}}
 		>
 			<div className="flex items-center gap-4 text-center">
-				<h1 className="text-[#e0fd27] text-3xl mb-8">01.</h1>
+				<h1 className="text-blue-600 text-3xl mb-8">05.</h1>
 				<SectionHeading>Contact Me</SectionHeading>
 			</div>
 			<p className="text-slate-400 -mt-5">

@@ -38,9 +38,9 @@ export default function Header() {
 							>
 								<Link
 									className={clsx(
-										"flex w-full items-center justify-center px-2 py-3 hover:text-[#e0fd27] transition gap-2",
+										"flex w-full items-center justify-center px-2 py-3 hover:text-blue-600 transition gap-2",
 										{
-											"text-[#e0fd27]": activeSection === link.name,
+											"text-blue-600": activeSection === link.name,
 										}
 									)}
 									href={link.hash}
@@ -49,7 +49,7 @@ export default function Header() {
 										setTimeOfLastClick(Date.now());
 									}}
 								>
-									<span className="text-[#e0fd27]">0{link.num}.</span>
+									<span className="text-blue-600">0{link.num}.</span>
 									{link.name}
 									{link.name === activeSection && (
 										<motion.span

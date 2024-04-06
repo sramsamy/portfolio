@@ -12,20 +12,19 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
-
-	const { ref } = useSectionInView("Experience");
+	const { ref, inView } = useSectionInView("Experience", 0.2);
 
 	return (
 		<section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
 			<div className="flex items-center gap-4 text-center mb-28">
-				<h1 className="text-[#e0fd27] text-3xl mb-8">04.</h1>
+				<h1 className="text-blue-600 text-3xl mb-8">04.</h1>
 				<SectionHeading>Experience</SectionHeading>
 			</div>
-			<VerticalTimeline lineColor="" className="">
+			<VerticalTimeline lineColor="">
 				{experiencesData.map((experienceItem, index) => (
 					<React.Fragment key={index}>
 						<VerticalTimelineElement
-							visible={true}
+							visible={inView}
 							contentStyle={{
 								backgroundColor: "#020617",
 								boxShadow: "none",
@@ -34,7 +33,7 @@ export default function Experience() {
 								padding: "1.3rem 2rem",
 							}}
 							contentArrowStyle={{
-								borderRight: "0.4rem solid rgb(224,253,39)",
+								borderRight: "0.4rem solid #cbd5e1",
 							}}
 							dateClassName="custom-date"
 							date={experienceItem.date}

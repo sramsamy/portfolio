@@ -32,7 +32,7 @@ export const links = [
 	{
 		name: "Contact",
 		hash: "#contact",
-		num: 4,
+		num: 5,
 	},
 ] as const;
 
@@ -93,7 +93,7 @@ export const experiencesData = [
 		description:
 			"Ensured accurate processing of prescriptions and maintained a high level of precision.",
 		icon: React.createElement(CgWorkAlt),
-		date: "Aug 2023 - Marc 2024",
+		date: "Aug 2023 - Mar 2024",
 	},
 	{
 		title: "Bachelor of Biomedical Science",
