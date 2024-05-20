@@ -5,8 +5,9 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import StarsCanvas from "@/components/starBackground";
+import { Open_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const open_Sans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Sachin Ramsamy",
@@ -22,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="!scroll-smooth">
 			<body
-				className={`${inter.className} bg-slate-950 text-slate-200 relative p-8`}
+				className={`${open_Sans.className} bg-slate-950 text-slate-200 relative p-8`}
 			>
 				<ActiveSectionContextProvider>
 					<Header />

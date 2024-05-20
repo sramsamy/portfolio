@@ -60,7 +60,7 @@ export default function Intro() {
 						{" "}
 						Aspiring full-stack developer.
 					</p>
-					<p className=" text-slate-300 mb-4 text-xl">
+					<p className=" text-slate-300 mb-4 text-l">
 						I'm a student at{" "}
 						<span className="text-blue-600">Griffith University</span> who's
 						passion is to bridge
