@@ -20,7 +20,7 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 
 export default function ActiveSectionContextProvider({ children } : ActiveSectionContextProviderProps) {
 
-    const [activeSection, setActiveSection] = useState<SectionName>('Home');
+    const [activeSection, setActiveSection] = useState<SectionName>("Home");
     const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
     return (
@@ -42,7 +42,7 @@ export function useActiveSectionContext() {
 
     if (context === null) {
         throw new Error(
-            "useActiveSectionContext must be used within an ActiveSectioncontextProovider"
+            "useActiveSectionContext must be used within an ActiveSectioncontextProvider"
         );
     }
 

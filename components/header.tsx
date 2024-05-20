@@ -4,8 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "@/public/SR.png";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -122,42 +120,44 @@ export default function Header() {
 			>
 				<nav className=" flex fixed top-0 h-12 py-2 sm:h-[initial] sm:py-0 justify-end">
 					<ul className="flex w-[22rem flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-slate-400 sm:w-[initial sm:flex-nowrap sm:gap-5 mr-5 text-base">
-						{links.map((link) => (
-							<motion.li
-								className="h-3/4 flex items-center justify-center relative"
-								key={link.hash}
-								initial={{ y: -100, opacity: 0 }}
-								animate={{ y: 0, opacity: 1 }}
-							>
-								<Link
-									className={clsx(
-										"flex w-full items-center justify-center px-2 py-3 hover:text-blue-600 transition gap-2",
-										{
-											"text-blue-600": activeSection === link.name,
-										}
-									)}
-									href={link.hash}
-									onClick={() => {
-										setActiveSection(link.name);
-										setTimeOfLastClick(Date.now());
-									}}
+						{links
+							.filter((link) => link.name !== "Home")
+							.map((link) => (
+								<motion.li
+									className="h-3/4 flex items-center justify-center relative"
+									key={link.hash}
+									initial={{ y: -100, opacity: 0 }}
+									animate={{ y: 0, opacity: 1 }}
 								>
-									<span className="text-blue-600">0{link.num}.</span>
-									{link.name}
-									{link.name === activeSection && (
-										<motion.span
-											className="bg-slate-900 rounded-full absolute inset-0 -z-10"
-											layoutId="activeSection"
-											transition={{
-												type: "spring",
-												stiffness: 380,
-												damping: 30,
-											}}
-										></motion.span>
-									)}
-								</Link>
-							</motion.li>
-						))}
+									<Link
+										className={clsx(
+											"flex w-full items-center justify-center px-2 py-3 hover:text-blue-600 transition gap-2",
+											{
+												"text-blue-600": activeSection === link.name,
+											}
+										)}
+										href={link.hash}
+										onClick={() => {
+											setActiveSection(link.name);
+											setTimeOfLastClick(Date.now());
+										}}
+									>
+										<span className="text-blue-600">0{link.num}.</span>
+										{link.name}
+										{link.name === activeSection && (
+											<motion.span
+												className="bg-slate-900 rounded-full absolute inset-0 -z-10"
+												layoutId="activeSection"
+												transition={{
+													type: "spring",
+													stiffness: 380,
+													damping: 30,
+												}}
+											></motion.span>
+										)}
+									</Link>
+								</motion.li>
+							))}
 					</ul>
 				</nav>
 			</motion.div>

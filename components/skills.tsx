@@ -29,7 +29,7 @@ export default function Skills() {
 		<section
 			ref={ref}
 			id="skills"
-			className="max-w-[53rem] scroll-mt-28 text-center sm:mb-40 mt-14"
+			className="max-w-[53rem] scroll-mt-28 text-center sm:mb-28 mt-14"
 		>
 			<div className="flex items-center gap-4 text-center">
 				<h1 className="text-blue-600 text-2xl mb-8">03.</h1>

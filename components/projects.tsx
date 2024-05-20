@@ -8,9 +8,10 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
 	const { ref } = useSectionInView("Projects", 0.5);
+	
 
 	return (
-		<section ref={ref} id="projects" className="scroll-mt-28 md:mb-40 ">
+		<section ref={ref} id="projects" className="scroll-mt-28 md:mb-28 ">
 			<div className="flex items-center gap-4 text-center">
 				<h1 className="text-blue-600 text-2xl mb-8">02.</h1>
 				<SectionHeading>Projects</SectionHeading>
