@@ -86,7 +86,7 @@ export default function Intro() {
 							<BsArrowRight className="opacity-70 group-hover:translate-x-1" />
 						</Link>
 						<a
-							href="/Cirriculum Vitae of Sachin Ramsamy.pdf"
+							href="/Resume_Sachin_Ramsamy.pdf"
 							download
 							className="group mt-8 flex items-center text-blue-600 border border-blue-600 rounded-md px-4 py-3 gap-2 outline-none focus:scale-110 hover:scale-110 hover:text-blue-600 hover:border-blue-500 hover:bg-black active:scale-105 transition"
 						>

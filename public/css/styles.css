@@ -15,3 +15,11 @@ h2::after {
 	margin-left: 20px;
 	background-color: #64748b;
 }
+
+#logo-container {
+    display: inline-block;
+}
+
+#logo {
+    transform: scale(0);
+}

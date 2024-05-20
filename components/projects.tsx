@@ -15,6 +15,7 @@ export default function Projects() {
 				<h1 className="text-blue-600 text-2xl mb-8">02.</h1>
 				<SectionHeading>Projects</SectionHeading>
 			</div>
+			
 			<div className="md:mt-8">
 				{projectsData.map((project, index) => (
 					<React.Fragment key={index}>
