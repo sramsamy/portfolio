@@ -11,7 +11,7 @@ export default function Intro() {
 	return (
 		<section
 			id="home"
-			className="h-screen text-left sm:mb:0 sm:mt-4 flex flex-col justify-center sm:flex-row scroll-mt-[100rem]"
+			className="sm:h-screen text-left sm:mb:0 sm:mt-4 flex flex-col justify-center sm:flex-row scroll-mt-[100rem]"
 		>
 			<motion.div
 				className="ml-4 absolute left-0 w-16 hidden xl:flex pl-4 p sm:mb-0 sm:mt-0"

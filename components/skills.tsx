@@ -29,13 +29,13 @@ export default function Skills() {
 		<section
 			ref={ref}
 			id="skills"
-			className="mb-28 max-w-[53rem] scroll-mt-28 text-cetner sm:mb-40 mt-40"
+			className="max-w-[53rem] scroll-mt-28 text-center sm:mb-40 mt-14"
 		>
 			<div className="flex items-center gap-4 text-center">
-				<h1 className="text-blue-600 text-3xl mb-8">03.</h1>
+				<h1 className="text-blue-600 text-2xl mb-8">03.</h1>
 				<SectionHeading>Skills</SectionHeading>
 			</div>
-			<ul className="flex flex-wrap justify-center gap-2 text-lg text-blue-600 mt-14">
+			<ul className="flex flex-wrap justify-center gap-2 text-lg text-blue-600 mt-8">
 				{skillsData.map((skill, index) => (
 					<motion.li
 						variants={fadeInAnimationVariants}

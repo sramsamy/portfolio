@@ -13,11 +13,12 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
 	const { ref, inView } = useSectionInView("Experience", 0.2);
+	
 
 	return (
-		<section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-			<div className="flex items-center gap-4 text-center mb-28">
-				<h1 className="text-blue-600 text-3xl mb-8">04.</h1>
+		<section id="experience" ref={ref} className="scroll-mt-28 mb-14 sm:mb-40 mt-14">
+			<div className="flex items-center gap-4 text-center mb-8">
+				<h1 className="text-blue-600 text-2xl mb-8">04.</h1>
 				<SectionHeading>Experience</SectionHeading>
 			</div>
 			<VerticalTimeline lineColor="">

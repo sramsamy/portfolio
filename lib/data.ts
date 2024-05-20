@@ -66,12 +66,12 @@ export const eeducationData = [
 ] as const;
 export const experiencesData = [
 	{
-		title: "Software Developer @ Agri-Storage & Logistics",
+		title: "Full-Stack Developer @ Agri-Storage & Logistics",
 		location: "Gold Coast, QLD",
 		description:
-			"I Designed and devloped a fully functional booking management system for a key player in the agri-cultural sector",
+			"Designed and developed a fully functional booking management system for a key player in the agri-cultural sector",
 		icon: React.createElement(CgWorkAlt),
-		date: "Nov 2024 - Present",
+		date: "Dec 2023 - Present",
 	},
 
 	{
@@ -82,14 +82,14 @@ export const experiencesData = [
 		date: "Jun 2024 - Oct 2024",
 	},
 	{
-		title: "Bachlor of Information Technology",
+		title: "Bachelor of Information Technology",
 		location: "Griffith Universtiy, Gold Coast, QLD",
 		description: "Software Development | GPA: 6.88",
 		icon: React.createElement(LuGraduationCap),
 		date: "Mar 2022 - Oct 2024",
 	},
 	{
-		title: "Pharmacy Assistant @ TeryyWhite Chemmart",
+		title: "Pharmacy Assistant @ TerryWhite Chemmart",
 		location: "Gold Coast, QLD",
 		description:
 			"Ensured accurate processing of prescriptions and maintained a high level of precision.",
@@ -116,20 +116,20 @@ export const projectsData = [
 	{
 		title: "Truck Booking System",
 		description:
-			"A booking management system for Agri Storage and Logistics, a prominent player in the agricultural industry spanning across QLD and NSW. I am working as a full-stack developer on this project for the last 4 months.",
+			"A booking management system for Agri Storage & Logistics, a prominent player in the agricultural industry spanning across QLD and NSW. I am working as a full-stack developer on this project for the last 4 months.",
 		tags: ["PHP", "Laravel", "SQLite3", "Tailwind"],
 		imageUrl: agriStorageImage,
 	},
 	{
 		title: "Portfolio Website",
-		description: "My personal website built with React, Typescipt and Next.js",
+		description: "My personal website built with React, Typescript and Next.js",
 		tags: ["React", "TypeScript", "Next.js", "Tailwind"],
 		imageUrl: portfolioImage,
 	},
 	{
 		title: "F1 Schedule",
 		description:
-			"A web application leverages various web APIs to access real-time data, enabling users to access the latest news, upcoming race schedules, driver championship standings, and delve into the rich history of the sport.",
+			"A web application leveraging various web APIs to access real-time data, enabling users to access the latest news, upcoming race schedules, drivers championship standings, and delve into the rich history of the sport.",
 		tags: ["Javascript", "HTML", "CSS"],
 		imageUrl: formulaOneImage,
 	},
@@ -150,7 +150,7 @@ export const projectsData = [
 	{
 		title: "Gym Workout Tracker App",
 		description:
-			"An app that provides an evidence-based workout routine that accommodates for individuals with busy lifestyles.",
+			"An app that provides an evidence-based workout routine, accommodating for individuals with busy lifestyles.",
 		tags: ["Ionic", "Angular", "Typescript"],
 		imageUrl: gymAppImage,
 	},
@@ -173,6 +173,8 @@ export const skillsData = [
     "Angular",
     "Ionic",
     "Framer Motion",
+    "Redux",
+    "React Native"
 ] as const;
 
 export const recentTechs = [
