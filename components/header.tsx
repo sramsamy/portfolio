@@ -64,19 +64,19 @@ export default function Header() {
 							x2="102.548"
 							y2="4.17648"
 							stroke="#2563EB"
-							stroke-width="15"
+							strokeWidth="15"
 						/>
 						<motion.path
 							variants={pathVariants}
 							d="M96 8H272"
 							stroke="#2563EB"
-							stroke-width="15"
+							strokeWidth="15"
 						/>
 						<motion.path
 							variants={pathVariants}
 							d="M96 320H272"
 							stroke="#2563EB"
-							stroke-width="15"
+							strokeWidth="15"
 						/>
 						<line
 							x1="266.491"
@@ -84,7 +84,7 @@ export default function Header() {
 							x2="360.83"
 							y2="167.216"
 							stroke="#2563EB"
-							stroke-width="15"
+							strokeWidth="15"
 						/>
 						<line
 							x1="360.23"
@@ -92,7 +92,7 @@ export default function Header() {
 							x2="264.458"
 							y2="323.949"
 							stroke="#2563EB"
-							stroke-width="15"
+							strokeWidth="15"
 						/>
 						<line
 							x1="101.611"
@@ -100,7 +100,7 @@ export default function Header() {
 							x2="6.52634"
 							y2="160.787"
 							stroke="#2563EB"
-							stroke-width="15"
+							strokeWidth="15"
 						/>
 						<motion.path
 							variants={pathVariants}
