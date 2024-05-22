@@ -10,6 +10,7 @@ import { Open_Sans } from "next/font/google";
 import SplashScreen from "@/components/splash-screen";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const open_Sans = Open_Sans({ subsets: ["latin"] });
 
@@ -38,12 +39,13 @@ export default function RootLayout({
 				className={`${open_Sans.className} bg-slate-950 text-slate-200 relative p-8`}
 			>
 				{isLoading && isHome ? (
-					<SplashScreen finishLoading={() => setIsLoading(false)}/>
+					<SplashScreen finishLoading={() => setIsLoading(false)} />
 				) : (
 					<ActiveSectionContextProvider>
 						<Header />
 						<Toaster position="bottom-center" />
 						{children}
+						<Analytics />
 						<Footer />
 						<div
 							style={{
