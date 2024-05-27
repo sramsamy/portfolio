@@ -159,7 +159,7 @@ export const projectsData = [
 		title: "Fake Store App",
 		description:
 			"A full stack dynamic e-commerce app designed to simulate a real online shopping experience. Users can log in/sign up and browse a variety of product categories fetched from the Fake Store API, view detailed product information, and manage their shopping carts and orders",
-		tags: ["React Native", "JavaScript", "Express.js"],
+		tags: ["React Native", "JavaScript", "Express.js", "SQLite3"],
 		imageUrl: fakeStoreAppImage1,
 	},
 	// {
