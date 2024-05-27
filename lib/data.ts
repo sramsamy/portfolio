@@ -6,8 +6,11 @@ import agriStorageImage from "@/public/agri.png";
 import portfolioImage from "@/public/portfolio.png";
 import workIntegratedLearningImage from "@/public/wil.png";
 import dataVisualiser from "@/public/dataVisualiser.png";
+import dataVisualiser1 from "@/public/dataVisualiser1.png";
 import formulaOneImage from "@/public/f1.png";
-import gymAppImage from "@/public/gym3.png";
+import gymAppImage from "@/public/gymapp.png";
+// import fakeStoreAppImage from "@/public/fakeStoreApp.png"
+import fakeStoreAppImage1 from "@/public/fakeStoreApp1.png"
 
 export const links = [
 	{
@@ -150,15 +153,22 @@ export const projectsData = [
 		description:
 			"Led a team in a data analysis project to visualise and gain insights into the state of Victoria’s Road and crash statistics.",
 		tags: ["Python", "Tkinter", "SQLite3", "Pandas", "Unit Testing"],
-		imageUrl: dataVisualiser,
+		imageUrl: dataVisualiser1,
 	},
 	{
-		title: "Gym Workout Tracker App",
+		title: "Fake Store App",
 		description:
-			"An app that provides an evidence-based workout routine, accommodating for individuals with busy lifestyles.",
-		tags: ["Ionic", "Angular", "Typescript"],
-		imageUrl: gymAppImage,
+			"A full stack dynamic e-commerce app designed to simulate a real online shopping experience. Users can log in/sign up and browse a variety of product categories fetched from the Fake Store API, view detailed product information, and manage their shopping carts and orders",
+		tags: ["React Native", "JavaScript", "Express.js"],
+		imageUrl: fakeStoreAppImage1,
 	},
+	// {
+	// 	title: "Gym Workout Tracker App",
+	// 	description:
+	// 		"An app that provides an evidence-based workout routine, accommodating for individuals with busy lifestyles.",
+	// 	tags: ["Ionic", "Angular", "Typescript"],
+	// 	imageUrl: gymAppImage,
+	// },
 ] as const;
 
 export const skillsData = [
