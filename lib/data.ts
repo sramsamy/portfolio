@@ -10,7 +10,9 @@ import dataVisualiser1 from "@/public/dataVisualiser1.png";
 import formulaOneImage from "@/public/f1.png";
 import gymAppImage from "@/public/gymapp.png";
 // import fakeStoreAppImage from "@/public/fakeStoreApp.png"
-import fakeStoreAppImage1 from "@/public/fakeStoreApp1.png"
+import fakeStoreAppImage1 from "@/public/fakeStoreApp1.png";
+import ibm from "@/public/ibm.png";
+import chat from "@/public/chat.png";
 
 export const links = [
 	{
@@ -46,33 +48,40 @@ export const links = [
 ] as const;
 
 export const eeducationData = [
-    {
-        qualification: "Bachlor of Information Technology",
-        location: "Griffith University",
-        major:"Software Development",
-        icon: React.createElement(LuGraduationCap),
-        date: "2023 - 2024",
-        gpa: "6.88"
-    },
-    {
-        qualification: "Diploma of Information Technology",
-        location: "Griffith College",
-        major: "",
-        icon: React.createElement(CgWorkAlt),
-        date: "2022 - 2023",
-        gpa: "6.88"
-    },
-    {
-        qualification: "Higher School Education",
-        location: "Moree Secondary College",
-        description:
-            "2nd in Chemistry & Biology",
-        icon: React.createElement(FaReact),
-        date: "",
-        gpa: ""
-    },
+	{
+		qualification: "Bachlor of Information Technology",
+		location: "Griffith University",
+		major: "Software Development",
+		icon: React.createElement(LuGraduationCap),
+		date: "2023 - 2024",
+		gpa: "6.88",
+	},
+	{
+		qualification: "Diploma of Information Technology",
+		location: "Griffith College",
+		major: "",
+		icon: React.createElement(CgWorkAlt),
+		date: "2022 - 2023",
+		gpa: "6.88",
+	},
+	{
+		qualification: "Higher School Education",
+		location: "Moree Secondary College",
+		description: "2nd in Chemistry & Biology",
+		icon: React.createElement(FaReact),
+		date: "",
+		gpa: "",
+	},
 ] as const;
 export const experiencesData = [
+	{
+		title: "Software Developer Intern @ IBM",
+		location: "Gold Coast, QLD",
+		description:
+			"Collobrated with a team of specialised security software engineers and developed an open-source passkey browser extension capable of performing FIDO2 registration and authentication ceremonies at supprting relying parties.",
+		icon: React.createElement(CgWorkAlt),
+		date: "Jun 2024 - Oct 2024",
+	},
 	{
 		title: "Full-Stack Developer @ Agri-Storage & Logistics",
 		location: "Gold Coast, QLD",
@@ -80,14 +89,6 @@ export const experiencesData = [
 			"Designed and developed a fully functional booking management system for a key player in the agri-cultural sector",
 		icon: React.createElement(CgWorkAlt),
 		date: "Dec 2023 - Present",
-	},
-
-	{
-		title: "Software Developer Intern @",
-		location: "Gold Coast, QLD",
-		description: "Work Integrated Learning (WIL)",
-		icon: React.createElement(CgWorkAlt),
-		date: "Jun 2024 - Oct 2024",
 	},
 	{
 		title: "Bachelor of Information Technology",
@@ -122,6 +123,13 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
+		title: "IBM Passkey Browser Extension",
+		description:
+			"This is an open-source project developed during my placement at IBM which aims to provide passkey support to major vendors such as chromium, firefox and webkit. This browser extension also aims to provide developers/technical sales a tool for demonstrating passkey functionality without using hardware based security keys.",
+		tags: ["JavaScript", "FIDO2", "Selenium", "Agile"],
+		imageUrl: ibm,
+	},
+	{
 		title: "Truck Booking System",
 		description:
 			"A booking management system for Agri Storage & Logistics, a prominent player in the agricultural industry spanning across QLD and NSW. I am working as a full-stack developer on this project for the last 4 months.",
@@ -135,11 +143,18 @@ export const projectsData = [
 		imageUrl: portfolioImage,
 	},
 	{
-		title: "F1 Schedule",
+		title: "Chat-Byte",
 		description:
-			"A web application leveraging various web APIs to access real-time data, enabling users to access the latest news, upcoming race schedules, drivers championship standings, and delve into the rich history of the sport.",
-		tags: ["Javascript", "HTML", "CSS"],
-		imageUrl: formulaOneImage,
+			"A MEAN stack chat application with real-time messaging, group and channel management, admin roles, user approval, banning, and full CRUD operations.",
+		tags: [
+			"Angular",
+			"Typescript",
+			"Bootstrap",
+			"MongoDB",
+			"NodeJS",
+			"Express",
+		],
+		imageUrl: chat,
 	},
 	{
 		title: "Work Integrated Learning Application",
@@ -170,35 +185,34 @@ export const projectsData = [
 	// 	imageUrl: gymAppImage,
 	// },
 ] as const;
-
 export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Git",
-    "Tailwind",
-    "MongoDB",
-    "Python",
-    "Laravel",
-    "PHP",
-    "Angular",
-    "Ionic",
-    "Framer Motion",
-    "Redux",
-    "React Native"
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"TypeScript",
+	"React",
+	"Next.js",
+	"Node.js",
+	"Git",
+	"Tailwind",
+	"MongoDB",
+	"Python",
+	"Laravel",
+	"PHP",
+	"Angular",
+	"Ionic",
+	"Framer Motion",
+	"Redux",
+	"React Native",
 ] as const;
 
 export const recentTechs = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Tailwind",
-    "Laravel",
-    "PHP",
-    "Framer Motion",
+	"JavaScript (ES6+)",
+	"TypeScript",
+	"React",
+	"Next.js",
+	"Tailwind",
+	"Laravel",
+	"PHP",
+	"Framer Motion",
 ] as const;
